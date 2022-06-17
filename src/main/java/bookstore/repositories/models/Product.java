@@ -1,20 +1,26 @@
-package bookstore.models;
+package bookstore.repositories.models;
 
 import framework.core.Storage.Storable;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
+
+@AllArgsConstructor
 @Data
 public abstract class Product implements Storable<String> {
     String id;
     String name;
-
+	double price;
+	@Override
+	public String getStorageKey() {
+		return this.id;
+	}
+/*
     public Product(String id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
-
-    double price ;
 
     public String getId() {
 		return id;
@@ -41,9 +47,6 @@ public abstract class Product implements Storable<String> {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+*/
 
-	@Override
-    public String getStorageKey() {
-        return this.id;
-    }
 }

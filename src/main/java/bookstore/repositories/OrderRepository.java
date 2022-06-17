@@ -1,7 +1,7 @@
 package bookstore.repositories;
 
 import bookstore.dao.OrderDao;
-import bookstore.models.Order;
+import bookstore.repositories.models.Order;
 import framework.core.DAO;
 import framework.core.EntityRepository;
 

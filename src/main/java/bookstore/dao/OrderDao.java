@@ -1,6 +1,6 @@
 package bookstore.dao;
 
-import bookstore.models.Order;
+import bookstore.repositories.models.Order;
 import framework.core.DAO;
 import framework.core.Storage.*;
 import framework.core.Storage.Storage;

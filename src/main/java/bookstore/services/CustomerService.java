@@ -1,6 +1,6 @@
 package bookstore.services;
 
-import bookstore.models.Customer;
+import bookstore.repositories.models.Customer;
 import bookstore.repositories.CustomerRepository;
 import framework.core.Service;
 

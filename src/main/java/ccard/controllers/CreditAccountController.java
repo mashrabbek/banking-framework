@@ -20,7 +20,7 @@ public class CreditAccountController implements IAccountController {
     CreditCardAccountServiceImpl accountService;
     AccountFactory creditCardFactory;
     public CreditAccountController() {
-        accountService = new CreditCardAccountServiceImpl();
+        accountService = CreditCardAccountServiceImpl.getInstance();
         creditCardFactory = new ConcreteCreditCardFactory();
     }
 

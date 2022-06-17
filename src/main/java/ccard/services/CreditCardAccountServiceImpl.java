@@ -49,7 +49,6 @@ public class CreditCardAccountServiceImpl implements AccountService {
 			customer = dbCustomer;
 		}
 		account.setCustomer(customer);
-//		account.setInterestStrategy(new GoldCCInterestStrategy());
 		accountRepository.save(account);
 		return account;
 	}
